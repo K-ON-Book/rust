@@ -400,5 +400,4 @@ fn add_both_bin(source1: &mut Vec<i32>, source2: &mut Vec<i32>) -> Vec<i32> {
     }
     return transfer(&mut output);
 }
-
 //TODO: 设计一个简单的有符号二进制加法器(gui)

@@ -16,7 +16,10 @@ fn main() {
         let guess: u32 = match guess.trim().parse() {
             // expect("Please type a number!");
             Ok(num) => num,
-            Err(_) => continue,
+            Err(_) => {
+                println!("Please type a number!");
+                continue;
+            }
         };
         println!("你猜测的数是:{}", guess);
         match guess.cmp(&secret_number) {
